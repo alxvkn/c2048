@@ -58,7 +58,7 @@ int main(int argc, char** argv) {
     g_v_tiles_state = malloc(sizeof(int) * SQR(g_cells));
         // no memset because resetTiles() doing it anyway
         resetTiles();
-    
+
     char rerender_needed = 1; // will store the return value of handleInput();
 
     while (!g_game_state.quit) {
