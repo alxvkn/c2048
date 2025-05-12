@@ -72,12 +72,10 @@ int main(int argc, char** argv) {
             drawField();
         }
 
-        char* input = malloc(sizeof(char) * 5);
+        char input[3];
         fgets(input, 2, stdin);
 
         rerender_needed = handleInput(input);
-
-        free(input);
     }
 
     free(g_v_tiles_state);
